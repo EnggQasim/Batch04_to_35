@@ -1,0 +1,1 @@
+Write 50 numpy methods in jupyter notebook
