@@ -1,0 +1,112 @@
+Numpy Methods:
+import numpy as np
+import numpy as np
+print(np.__version__)
+1.19.2
+import numpy as np
+a = np. array([0,1,2,3,4,5,6])
+a
+Out array([0, 1, 2, 3, 4, 5, 6])
+Getting odd values from array:
+a=np.arange(20)
+a[a%2==1]
+Out array([ 1,  3,  5,  7,  9, 11, 13, 15, 17, 19])
+Getting Even values from array:
+a=np.arange(20)
+a[a%2==0]
+Out array([ 0,  2,  4,  6,  8, 10, 12, 14, 16, 18])
+Replace Odd numbers with -1 in numpy array:
+a=np.arange(20)
+a[a%2==1]= -1
+a
+Out array([ 0, -1,  2, -1,  4, -1,  6, -1,  8, -1, 10, -1, 12, -1, 14, -1, 16, -1, 18, -1])
+Replace Even numbers with 2 in NumPy array:
+a=np.arange(20)
+a[a%2==0]=2
+a
+Out array([ 2,  1,  2,  3,  2,  5,  2,  7,  2,  9,  2, 11,  2, 13,  2, 15,  2, 17,  2, 19,  2])
+
+Reshaping an array into two rows:
+a = np.arange(100)
+b = np.reshape(a, (2, -1))
+b
+Out array([[ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,     27, 28, 29, 30, 31,32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47,48, 49],
+[50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]])
+
+Reshaping an array into Two Columns:
+a = np.arange(26)
+b = np.reshape(a, (-1, 2))
+b
+Out array([[ 0,  1],
+       [ 2,  3],
+       [ 4,  5],
+       [ 6,  7],
+       [ 8,  9],
+       [10, 11],
+       [12, 13],
+       [14, 15],
+       [16, 17],
+       [18, 19],
+       [20, 21],
+       [22, 23],
+       [24, 25]])
+
+Repeating the elements in array for sequences 1:
+
+a=np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+np.r_[np.repeat(a,6)]
+
+Out array([1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9])
+
+
+Extracting the number ranges from an array:
+b = np.array([10,3,5,2,1,7,3,4,0,1,5,25,8,20,12,11])
+b[(b >= 5) & (b <= 25)]
+Out array([10,  5,  7,  5, 25,  8, 20, 12, 11])
+How to calculate median:
+b = np.array([10,3,5,2,1,7,3,4,0,1,5,25,8,20,12,11])
+np.median(b)
+Out 5.0
+How to calculate Standard Deviation:
+b = np.array([10,3,5,2,1,7,3,4,0,1,5,25,8,20,12,11])
+np.std(b)
+Out 6.788950121336877
+1-D array:
+a = np.arange(10)
+a
+Out array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+ 2-D array:
+b = np.arange(16).reshape(4,4)
+print(b)
+Out [[ 0  1  2  3]
+    [ 4  5  6  7]
+    [ 8  9 10 11]
+    [12 13 14 15]]
+
+
+
+
+
+
+
+3-D arrays:
+c = np.arange(32).reshape(2,4,4)  
+print(c)
+Out	[[[ 0  1  2  3]
+  	 [ 4  5  6  7]
+    	 [ 8  9 10 11]
+ 	 [12 13 14 15]]
+
+	 [[16 17 18 19]
+ 	 [20 21 22 23]
+ 	 [24 25 26 27]
+  	 [28 29 30 31]]]
+Slicing:
+x = np.array([(1,2,3,4),(3,4,5,6)])
+print(x[0:,3])
+Out [4 6]
+
+Boolean:
+boolean_array = np.array([1, 0.5, 0, None], dtype=bool)
+print(boolean_array)
+Out  [ True  True False False]
