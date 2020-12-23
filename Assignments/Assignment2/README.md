@@ -1,4 +1,4 @@
-# Read Instructions carefully before attemption this assignment
+# Read Instructions carefully before attempting this assignment
 
 1) don't rename any function name
 2) don't rename any variable name
