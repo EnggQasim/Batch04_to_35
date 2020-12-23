@@ -11,7 +11,7 @@
 #9) copy your this file absolute url then paste in google form
 # Example above: https://github.com/EnggQasim/Batch04_to_35/blob/main/Sunday/1_30%20to%203_30/Assignments/assignment1.txt
 # Because all assignment we will be cheked through software if you missed any above points
-# then we can't assign your scoress in our database.
+# then we can't assign your scores in our database.
 
 
 
