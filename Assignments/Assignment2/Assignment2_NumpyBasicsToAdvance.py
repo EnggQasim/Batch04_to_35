@@ -154,7 +154,8 @@ def function8():
 def function9():
     # Create an array of 2, 4, 6, 8, ..., 100.
     
-    a = # write your code here
+    a = np.arange(2,102)
+    a[a%2==0]
   
     return a
 
@@ -189,7 +190,7 @@ def function11():
     # Replace all odd numbers in arr with -1 without changing arr.
     
     arr = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-    ans = #write your code here 
+    ans = arr[arr%2==1]=-1 
   
     return ans
 
