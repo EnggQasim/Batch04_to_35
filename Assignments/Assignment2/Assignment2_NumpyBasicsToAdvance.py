@@ -1,4 +1,4 @@
-# # Read Instructions carefully before attempting this assignment
+# Read Instructions carefully before attempting this assignment
 
 # 1) don't rename any function name
 # 2) don't rename any variable name
@@ -27,7 +27,7 @@ def function1():
     # dimension should be 6row 2 columns  
     # and assign this array values in x values in x variable
     # Hint: you can use arange and reshape numpy methods  
-    x =  # Write your code here 
+    x =  np.arange(1,13).reshape((6,2)) 
 
     return x
     """
@@ -48,7 +48,7 @@ def function2():
     #array value should be satart from 10 and end with 36 (both included)
     # Hint: dtype, reshape 
     
-    x =     #wrtie your code here
+    x = np.arange(1,28,dtype=np.float64).reshape((3,3,3))     #wrtie your code here
 
 
     return x
@@ -229,7 +229,7 @@ def function14():
     # Hint use split method
     
     
-    arr = numpy.arange(10, 34, 1) #write reshape code
+    arr = np.arange(10, 34, 1) #write reshape code
     ans = #write your code here 
   
     return ans
@@ -341,7 +341,7 @@ def function19():
 def fucntion20():
     #apply fuction "abc" on each value of Array "X"
     x = np.arange(1,11)
-    def xyz(x):
+    def abc(x):
         return x*2+3-2
 
     return #Write your Code here
