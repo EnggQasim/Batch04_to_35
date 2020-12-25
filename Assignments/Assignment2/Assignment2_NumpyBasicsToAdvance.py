@@ -48,7 +48,7 @@ def function2():
     #array value should be satart from 10 and end with 36 (both included)
     # Hint: dtype, reshape 
     
-    x =     np.arange(10,37).reshape(3,3,3).astype('float64')
+    x = np.arange(10,37).reshape(3,3,3).astype('float64')
 
 
     return x
@@ -86,8 +86,9 @@ def function4():
     #Swap columns 1 and 2 in the array arr.
    
     arr = np.arange(9).reshape(3,3)
-  
-    return #wrtie your code here
+    arr[:,[1,0,2]]
+    
+    return arr
     """
     Expected Output:
           array([[1, 0, 2],
@@ -99,7 +100,7 @@ def function4():
 def function5():
     #Create a null vector of size 20 with 4 rows and 5 columns with numpy function
    
-    z = #wrtie your code here
+    z = np.zeros((4,5))
   
     return z
     """
@@ -114,7 +115,10 @@ def function5():
 def function6():
     # Create a null vector of size 10 but the fifth and eighth value which is 10,20 respectively
    
-    arr = #wrtie your code here
+    arr = np.zeros(10)
+    arr[5] = 10 
+    arr[8] = 20
+
   
     return arr
    
@@ -124,7 +128,7 @@ def function7():
     #  Create an array of zeros with the same shape and type as X. Dont use reshape method
     x = np.arange(4, dtype=np.int64)
   
-    return #write your code here
+    return np.zeros(4, dtype=np.int64)
 
     """
     Expected Output:
@@ -135,7 +139,8 @@ def function7():
 def function8():
     # Create a new array of 2x5 uints, filled with 6.
     
-    x = #write your code here
+    x = x = np.arange(10, dtype=np.uint32).reshape(2,5)
+    x[::] = 6
   
     return x
 
