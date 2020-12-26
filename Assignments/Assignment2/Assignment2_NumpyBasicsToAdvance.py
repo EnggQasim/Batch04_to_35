@@ -326,7 +326,7 @@ def function19():
     W =   # Write your code here 
     b =   # Write your code here
     output =    # Write your code here
-
+    return output
     #expected output
     """
     array([[  6,  17,  38,  69, 110],
