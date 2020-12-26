@@ -338,7 +338,7 @@ def function19():
 
 
 #Task20
-def fucntion20():
+def function20():
     #apply fuction "abc" on each value of Array "X"
     x = np.arange(1,11)
     def abc(x):
